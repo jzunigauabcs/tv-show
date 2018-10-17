@@ -3,6 +3,18 @@ body {
 	background: linear-gradient(to right, #04505E, #43bbd1);
 	font-size: 16px;
 }
+body::after {
+    content: '';
+    background-image: url('../images/bg.jpg');
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;  
+
+}
 .container {
 	max-width: 1200px;
     margin: 0 auto;
@@ -32,11 +44,62 @@ body {
 #btnSearch {
 	font-size: 1.3em;
     padding: 4px 15px;
-    background: #2ea3b8;
+    background-color: #2ea3b8;
     color: white;
     border: 1px solid white;
     border-radius: 5px;
 }
 #btnSearch:active {
 	background-color: #187f92;
+}
+.result  {
+    background-color: #7ec6e2ab;
+    margin-top: 20px;
+}
+.total-series {
+    color: white;
+    text-align: center;
+}
+.total-series h2{
+    padding-top: 20px;
+} 
+.card-container {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px,  1fr));
+}
+.card {
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px 5px;
+}
+.card .card-hero {
+    position: relative;
+}
+.card .card-hero img{
+    height: 252px;
+    width: 100%;
+    object-fit: cover;
+}
+.card .card-hero .cancel{
+    background-color: #0e0d0dcf;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.card .card-title {
+    padding: 15px;
+}
+.card .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .card-title h3{
+    margin: 0;
+}
+.load {
+    background-color: #79acb5!important;
 }

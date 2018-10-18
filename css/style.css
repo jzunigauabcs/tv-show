@@ -1,0 +1,68 @@
+body {
+	background: linear-gradient(to right, #04505e, #43bbd1);
+}
+body::after {
+	content: '';
+	background-image: url('../images/bg.jpg');
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0.3;
+	z-index: -1;
+}
+.container {
+	max-width: 1200px;
+	margin: 40px auto 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.title {
+	color: white;
+	text-align: center;
+}
+#tbxSearch {
+	font-size: 1.2em;
+	padding: 5px;
+	width: 400px;
+	border-radius: 7px;
+	border: 0;
+}
+#btnSearch {
+	border: 0;
+	background-color: #2ea3b8;
+	border-radius: 7px;
+	color: white;
+	font-size: 1.3em;
+	padding: 4px 15px;
+}
+.result {
+	background-color: #7ec6e2ab;
+	margin-top: 30px;
+	width: 100%;
+}
+.total-series h2 {
+	color: white;
+	text-align: center;
+}
+.card {
+	background-color: white;
+	margin: 10px 5px;
+}
+.card-hero img {
+	width: 100%;
+}
+.cards-series {
+	display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px,  1fr));
+}
+
+
+
+
+
+
+
+

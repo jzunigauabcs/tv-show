@@ -54,9 +54,15 @@ body::after {
 .card-hero img {
 	width: 100%;
 }
+.card-title {
+	text-align: center;
+}
 .cards-series {
 	display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px,  1fr));
+}
+.load {
+	background-color: #79acb5!important;
 }
 
 
